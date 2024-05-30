@@ -47,9 +47,9 @@ function Location() {
   });
   if (loading) return <p>Loading...</p>;
   return (
-    <div className="flex flex-col">
-      <div className="justify-center">
-        <div className="">
+    <div className="flex flex-col bg-[url('https://4kwallpapers.com/images/wallpapers/rick-and-morty-rick-2560x1440-9531.jpg')]">
+      <div className="flex">
+        <div className="flex justify-center items-center w-screen p-16">
           <table className="w-9/12 text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
             <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
               <tr>

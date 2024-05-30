@@ -5,7 +5,7 @@ export default function Card({ data,put }) {
     <>
       <div className="relative flex w-80 mb-5 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-2xl">
         <div className="relative mx-4 mt-4 h-96 overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700">
-          <Link to={`/character/${data.id}`}>
+          <Link to={`/detailcharacter/${data.id}`}>
             <img src={data.image} className="h-full w-full object-cover" />
           </Link>
         </div>

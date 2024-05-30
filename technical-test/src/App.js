@@ -9,6 +9,7 @@ import MainLayout from "./components/MainLayout";
 import ListCharacter from "./views/ListCharacter";
 import Home from "./views/Home";
 import Location from "./views/Location";
+import DetailChar from "./views/DetailChar";
 
 function App() {
   const router = createBrowserRouter([
@@ -20,8 +21,8 @@ function App() {
           element: <ListCharacter />,
         },
         {
-          path: "/detailcharacter",
-          element: <ListCharacter />,
+          path: "/detailcharacter/:id",
+          element: <DetailChar />,
         },
         {
           path: "/locations",

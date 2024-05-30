@@ -15,7 +15,7 @@ function ListCharacter() {
   ];
   return (
     <div className="flex flex-1  justify-center items-center h-screen w-screen bg-[url('https://wallpapers.com/images/featured/rick-and-morty-pc-4k-ks9x4010rl0fycrb.jpg')] bg-cover">
-      <div className="flex flex-row space-x-6">
+      <div className="grid md:grid-cols-2 grid-cols-1 md:space-x-6">
         {data &&
           data.map((item, index) => {
             return (

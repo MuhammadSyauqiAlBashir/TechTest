@@ -5,7 +5,7 @@ function MainLayout() {
   return (
     <>
       <Navbar />
-      <main className="pt-16 flex flex-col min-h-screen">
+      <main>
         <Outlet />
       </main>
     </>
