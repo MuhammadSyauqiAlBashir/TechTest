@@ -8,6 +8,7 @@ import MainLayout from "./components/MainLayout";
 
 import ListCharacter from "./views/ListCharacter";
 import Home from "./views/Home";
+import Location from "./views/Location";
 
 function App() {
   const router = createBrowserRouter([
@@ -17,6 +18,14 @@ function App() {
         {
           path: "/character",
           element: <ListCharacter />,
+        },
+        {
+          path: "/detailcharacter",
+          element: <ListCharacter />,
+        },
+        {
+          path: "/locations",
+          element: <Location />,
         },
       ],
     },

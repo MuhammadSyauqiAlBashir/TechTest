@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { gql, useQuery } from "@apollo/client";
 import Card from "../components/Card";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const Query = gql`
   query ($page: Int) {
@@ -40,7 +40,7 @@ function ListCharacter() {
       <div className="grid grid-cols-4 p-16 justify-center max-sm:grid-cols-1 max-md:grid-cols-2 max-lg:grid-cols-3">
         {data.characters.results &&
           data.characters.results.map((item, index) => {
-            return <Card data={item} key={index} />;
+            return <Card data={item} key={index} put={"listChar"}/>;
           })}
       </div>
       <div className="flex space-x-5 items-center justify-center mb-14">

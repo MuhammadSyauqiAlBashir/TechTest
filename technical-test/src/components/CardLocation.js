@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function Card({ data,put }) {
+export default function Card({ data }) {
   return (
     <>
       <div className="relative flex w-80 mb-5 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-2xl">
